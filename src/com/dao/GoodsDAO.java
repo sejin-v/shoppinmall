@@ -10,4 +10,8 @@ public class GoodsDAO {
 	   List<GoodsDTO> list =session.selectList("GoodsMapper.goodsList",gCategory);
 	   return list;
    }
+   public GoodsDTO gooodsRetrieve(SqlSession session, String gCode) {
+	   GoodsDTO dto=session.selectOne("GoodsMapper.gooodsRetrieve",gCode);
+	   return dto;
+   }
 }

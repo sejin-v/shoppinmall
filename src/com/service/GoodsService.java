@@ -27,4 +27,16 @@ public class GoodsService {
 	
 		return list;
 	}// end idCheck
+	public GoodsDTO gooodsRetrieve(String gCode) {
+		SqlSession session =MySqlSessionFactory.getSession();
+		GoodsDTO dto=new GoodsDTO();
+		try {
+			GoodsDAO dao=new GoodsDAO();
+			dto=dao.gooodsRetrieve(session,gCode);
+			session.commit();
+		} finally {
+			session.close();
+		}
+		return dto;
+	}
 }// end class

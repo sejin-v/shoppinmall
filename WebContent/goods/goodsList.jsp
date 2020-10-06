@@ -40,7 +40,7 @@
 							<table style='padding:15px'>
 								<tr>
 									<td>
-										<a href="GoodsRetrieveServlet?gCode="<%=gCode %>> 
+										<a href="GoodsRetrieveServlet?gCode=<%=gCode %>"> 
 											<img src="images/items/<%= gImage %>.gif" border="0" align="center" width="200">
 										</a>
 									</td>
@@ -54,7 +54,7 @@
 								</tr>
 								<tr>
 									<td class= "td_default" align ="center">
-										<a class= "a_black" href=""> 
+										<a class= "a_black" href="GoodsRetrieveServlet?gCode=<%=gCode %>"> 
 										<%=gName %><br>
 										</a>
 										<font color="gray">

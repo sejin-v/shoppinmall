@@ -11,4 +11,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     	where gCategory=#{gCategory}
 	</select>	
 	
+	<select id="gooodsRetrieve"  parameterType="string" resultType="GoodsDTO">
+		select * from goods where gcode=#{gcode}
+	</select>
 </mapper>
