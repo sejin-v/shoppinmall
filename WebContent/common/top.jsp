@@ -10,7 +10,7 @@
 <div class="top">
 <a href="LogoutServlet">로그아웃</a>
 <a href="">장바구니</a>
-<a href="">mypage</a>
+<a href="MyPageServlet">mypage</a>
 </div >
 <%}else{ %>
 <div class="top">
