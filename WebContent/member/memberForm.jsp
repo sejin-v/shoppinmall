@@ -53,7 +53,7 @@
  
  });
 </script>    
-<form action="MemberAddServlet" method="get">
+<form action="MemberAddServlet" method="post">
 *아이디:<input type="text" name="userid" id="userid">
 <span id="result"></span>
 <br> 

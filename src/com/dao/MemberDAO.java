@@ -28,4 +28,16 @@ public class MemberDAO {
 	 return dto;
 	   
    }
+   
+   public int memberUpdate(SqlSession session,MemberDTO dto) {
+		//"MemberMapper.memberUpdate" 사용
+	   	int n=session.update("MemberMapper.memberUpdate",dto);
+		session.commit();
+	   	return n;
+		   }	
+   
+   public String idSearch(SqlSession session,MemberDTO dto) {
+	   String userid=session.selectOne("idSearch",dto);
+	   return userid;
+   }
 }

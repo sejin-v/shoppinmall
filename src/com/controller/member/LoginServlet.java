@@ -41,7 +41,6 @@ public class LoginServlet extends HttpServlet {
 			nextPage="main";
 			HttpSession session=request.getSession();
 			session.setAttribute("login", dto);
-			System.out.println(dto);
 		}else {
 			nextPage="LoginUIServlet";
 		}

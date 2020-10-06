@@ -15,7 +15,6 @@ import javax.websocket.SendResult;
 public class LoginUIServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
 		//로그인 폼으로 이동
 		response.sendRedirect("loginForm.jsp");
 	}
