@@ -3,7 +3,10 @@
 * {
 	font-family: 'Noto Sans KR', sans-serif;
 }
-
+/*  body{
+	width:1200px;
+	margin :0 auto;
+} */
 h1 {
 	text-align: center;
 }

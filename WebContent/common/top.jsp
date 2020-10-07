@@ -9,14 +9,13 @@
 <h1>환영합니다 <%=dto.getUserid() %></h1>
 <div class="top">
 <a href="LogoutServlet">로그아웃</a>
-<a href="">장바구니</a>
+<a href="CartListServlet">장바구니</a>
 <a href="MyPageServlet">mypage</a>
 </div >
 <%}else{ %>
 <div class="top">
 <a href="LoginUIServlet">로그인</a>
 <a href="MemberUIServlet">회원가입</a>
-<a href="">장바구니</a>
-<a href="">mypage</a>
+
 </div>
 <%} %>
